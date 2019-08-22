@@ -1,0 +1,15 @@
+int* compareTriplets(int a_count, int* a, int b_count, int* b, int* result_count) {
+    int x=0,y=0;
+    int *ar = malloc(2 * sizeof(int));
+    *result_count=2;
+    for(int i=0;i<3;i++)
+    {
+        if(a[i]>b[i])
+            x=x+1;
+        else if(b[i]>a[i])
+            y=y+1;
+    }
+    ar[0]=x;
+    ar[1]=y;
+    return ar;
+}

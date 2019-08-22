@@ -1,0 +1,11 @@
+int simpleArraySum(int ar_count, int* ar)
+{
+    int sum=0,i=0;
+     while(i!=ar_count)
+     {
+         sum+=ar[i];
+         i=i+1;
+     }
+     return sum;
+
+}
